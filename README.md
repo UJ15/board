@@ -3,6 +3,7 @@
 
 참고 블로그의 흐름을 따라가며 배운 내용을 토대로 게시판을 구현해본다.
 
+Gradle
 Spring Boot  
 Spring Security  
 MySql  
