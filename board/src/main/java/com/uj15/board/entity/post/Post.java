@@ -1,11 +1,9 @@
 package com.uj15.board.entity.post;
 
 import com.uj15.board.entity.user.User;
+import org.springframework.util.Assert;
 
 import javax.persistence.*;
-
-import static com.google.common.base.Preconditions.checkArgument;
-import static org.apache.logging.log4j.util.Strings.isNotEmpty;
 
 @Entity
 @Table(name = "posts")
@@ -22,7 +20,7 @@ public class Post {
     private String content;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(referencedColumnName = "user_id")
+    @JoinColumn(name = "user_id")
     private User user;
 
     protected Post() {
@@ -31,9 +29,9 @@ public class Post {
 
     private Post(PostBuilder builder) {
 
-        checkArgument(isNotEmpty(builder.title), "title must be provided");
-        checkArgument(isNotEmpty(builder.content), "content must be provided");
-        checkArgument(builder.user != null, "user must be provided");
+        Assert.notNull(builder.title, "title must be provided");
+        Assert.notNull(builder.content, "content must be provided");
+        Assert.notNull(builder.user, "user must be provided");
 
         this.title = builder.title;
         this.content = builder.content;

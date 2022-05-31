@@ -1,9 +1,8 @@
 package com.uj15.board.entity.user;
 
-import javax.persistence.*;
+import org.springframework.util.Assert;
 
-import static com.google.common.base.Preconditions.checkArgument;
-import static org.apache.logging.log4j.util.Strings.isNotEmpty;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
@@ -28,8 +27,8 @@ public class User {
 
     private User(UserBuilder builder) {
 
-        checkArgument(isNotEmpty(builder().username), "username must be provided ");
-        checkArgument(isNotEmpty(builder().email), "email must be provided ");
+        Assert.notNull(builder.username, "username must be provided ");
+        Assert.notNull(builder.email, "email must be provided ");
 
         this.email = builder.email;
         this.username = builder.username;
