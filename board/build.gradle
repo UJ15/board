@@ -25,14 +25,16 @@ dependencies {
 	//Mysql Connector
 	implementation 'mysql:mysql-connector-java:8.0.29'
 
-	//Spring Security
-	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.0'
+//	//Spring Security
+//	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.0'
 
-	//Swagger Ui
-	implementation 'io.springfox:springfox-swagger-ui:2.6.1'
+	//SpringDoc OpenApi
+	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
 
-	//Swagger
-	implementation 'io.springfox:springfox-swagger2:2.6.1'
+	//Validation
+	implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.7'
+
+
 }
 
 tasks.named('test') {
