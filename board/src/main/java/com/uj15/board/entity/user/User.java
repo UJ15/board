@@ -29,6 +29,7 @@ public class User {
 
         Assert.notNull(builder.username, "username must be provided ");
         Assert.notNull(builder.email, "email must be provided ");
+        Assert.state(builder.age <= 0, "age must be positive");
 
         this.email = builder.email;
         this.username = builder.username;
