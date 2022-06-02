@@ -9,8 +9,9 @@ import javax.persistence.*;
 public class User {
 
     @Id
+    @Column(name = "user_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long userId;
 
     @Column(name = "email")
     private String email;
@@ -71,9 +72,9 @@ public class User {
         return new UserBuilder();
     }
 
-    public Long getId() {
+    public Long getUserId() {
 
-        return id;
+        return userId;
     }
 
     public String getEmail() {
