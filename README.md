@@ -6,7 +6,7 @@
 JDK 17 (새로운 기능을 사용하며 8, 11 버전과 비교를 위해)   
 Gradle   
 Spring Boot  
-Spring Security  
+Spring Security, JWT  
 MySql  
 JPA, Mybatis, (Data Jdbc)  
 
