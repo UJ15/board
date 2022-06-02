@@ -4,7 +4,6 @@ import com.uj15.board.entity.user.UserRepository;
 import org.springframework.beans.factory.annotation.Value;
 
 import javax.annotation.PostConstruct;
-import java.nio.charset.StandardCharsets;
 import java.util.Base64;
 
 public class JwtProvider {
