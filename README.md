@@ -8,7 +8,7 @@ Gradle
 Spring Boot  
 Spring Security, JWT  
 MySql  
-JPA, Mybatis, (Data Jdbc)  
+JPA 
 
 lombok 사용 X  
 
