@@ -25,8 +25,8 @@ dependencies {
 	//Mysql Connector
 	implementation 'mysql:mysql-connector-java:8.0.29'
 
-//	//Spring Security
-//	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.0'
+	//Spring Security
+	implementation 'org.springframework.boot:spring-boot-starter-security:2.7.0'
 
 	//SpringDoc OpenApi
 	implementation 'org.springdoc:springdoc-openapi-ui:1.6.9'
@@ -34,7 +34,8 @@ dependencies {
 	//Validation
 	implementation 'org.springframework.boot:spring-boot-starter-validation:2.6.7'
 
-
+	//JWT
+	implementation 'io.jsonwebtoken:jjwt:0.9.1'
 }
 
 tasks.named('test') {

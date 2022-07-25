@@ -20,7 +20,7 @@ public class UserResponse {
     public static UserResponse from(User user) {
 
         return UserResponse.builder()
-                .id(user.getId())
+                .id(user.getUserId())
                 .username(user.getUsername())
                 .email(user.getEmail())
                 .age(user.getAge())
